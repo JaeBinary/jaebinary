@@ -20,9 +20,9 @@ int main(void)
 {
     char arrTEXT[MAX_TEXT_LENGTH];
 
-	printf("텍스트를 입력하시오. : ");
-	scanf("%s", arrTEXT);
-	
+    printf("텍스트를 입력하시오. : ");
+    scanf("%s", arrTEXT);
+    
     AlphabetToggleCase(arrTEXT);
     printf("%s", arrTEXT);
 
