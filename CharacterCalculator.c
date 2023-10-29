@@ -14,23 +14,23 @@
 
 #define MAX_TEXT_LENGTH 25565
 
-void ToggleCase(char *text);
+void AlphabetToggleCase(char *text);
 
 int main(void)
 {
     char arrTEXT[MAX_TEXT_LENGTH];
 
-    printf("텍스트를 입력하시오. : ");
-    scanf("%s", arrTEXT);
-
-    ToggleCase(text);
+	printf("텍스트를 입력하시오. : ");
+	scanf("%s", arrTEXT);
+	
+    AlphabetToggleCase(arrTEXT);
     printf("%s", arrTEXT);
 
     return 0;
 }
 
-// 대소문자 변환 함수
-void ToggleCase(char *text)
+// 알파벳 대소문자 변환 함수
+void AlphabetToggleCase(char *text)
 {
     while (*text) {
         if (*text >= 'a' && *text <= 'z') {
